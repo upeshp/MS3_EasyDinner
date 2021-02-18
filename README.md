@@ -1,45 +1,85 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## Milestone 3 – Easy Dinners Website
 
-Welcome USER_NAME,
+I am designing a recipe sharing database website. The website will contain recipes for quick, easy family dinners.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+## UX
 
-## Gitpod Reminders
+_Overview_
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The aim of the project is to design a recipe website containing a database of quick, easy family meals. 
+The website is designed to cater to those specifically looking for recipes which fit this criteria, for example busy parents who don't have time or energy to think about dinner, or prepare complicated meals for their family! 
+As this website will contain an active database, there will be an option for users to signup to add their own recipes.
+The website is designed to be suitable for use on all devices, from desktop to mobile. 
 
-`python3 -m http.server`
+_User Stories_
+	
+   *	I want the website to be intuitive, so I can get an impression of what it does from first glance.
+   *	I want the website to be visually appealing and well presented.
+   *	I want the recipe listing feature to be searchable, so I can search for specific recipes I may be interested in.
+   *	I want an easy way to login or signup to the website.
+   *	I want it to be easy to add/edit a recipe.
+	
+_5 S's_
 
-A blue button should appear to click: *Make Public*,
+**Strategy** 
 
-Another blue button should appear to click: *Open Browser*.
+The primary goal is to provide a searchable database of recipes for website users, which is visually appealing, and easy to use.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+**Scope** 
 
-A blue button should appear to click: *Make Public*,
+The overall look and feel of the website was influenced by researching similar websites (credits at end) [https://www.hellofresh.co.uk/recipes/quick-recipes] [https://www.deliciousmagazine.co.uk/collections/healthy-family-meals/]:
+-	These are simple/clean in design.
+-	Recipes are displayed in a grid of "cards" consisting of an image and recipe title, clicking on a recipe card takes you to the recipe details page.
+-	There is a facility to search recipes. 
+-	There is a facility to login/register to the site, which then takes you to your profile page.
 
-Another blue button should appear to click: *Open Browser*.
+With this in mind, my website will include:
+- 	A homepage with some details about the website, some featured recipes, and links to sign in or register (inlcuded to give an overview of the site, and make it intuitive for the user).
+-	A searchable recipes page, which will display the recipes in a "card" or grid format.
+-	Clicking on the recipe "card" will bring up that particular recipe details page, including the ingredients/method.
+-	A login/sign up page.
+-	Once logged in the user will be directed to their user profile page, which will give the user options to add/edit their own recipe.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+**Structure** 
 
-## Updates Since The Instructional Video
+In line with the features identified in the scope section, the website will be structured as follows:
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+1.	Homepage:
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+	-	Navbar at top, showing website title/logo, and links to other pages (fixed/featured on all pages for familiarity/ease of use).
+	-	Hero image with text explaining the purpose of the site.
+ 	- 	Some featured recipes.
+	- 	Links to log in or sign in.
+	-	Footer showing social media links (fixed/featured on all pages for familiarity/ease of use).
+	- 	This page has been included/designed in this way to give the user an effective snapshot of the site, you can see all the main features of the site from looking at this page:
+		-	Introductory text and hero image "explain" the sites purpose.
+		-	The featured recipes give a preview of the type of recipes they can access.
+		-	The sign in/log in links show that this is a interactive/sharing site, the accompanying text will encourage the user to do so.
+  
+2.	Recipes:
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+	-	A search feature at the top of the page. 
+	-	Recipes displayed via "cards" or thumbnails, consisting of the recipe image/recipe title, in a grid format.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+3.	Recipe Details:
+	
+	-	Will include all recipe details including ingredients, method, added by, prep time, servings.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+4. 	Login/Sign Up:
+	-	The log in and sign up pages will be the same, requiring the user to input username/password.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+5. 	Profile:
+	-	Will include the facility to add users own recipes, as well as edit any recipes already submitted.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+**Skeleton** 
 
---------
+[Wireframes](https://github.com/upeshp/.........)
 
-Happy coding!
+
+**Surface** 
+
+-	The colour scheme will be influenced from the research detailed in the scope section above.
+-	The websites tend to use simple colour schemes, with green often being used.
+-	Green is associated with being peaceful and healthy, which is perfect for this site, so this colour will be used in my site for any main features, along with grey, which is associated with being peaceful/calm [Source: CrazyEgg](https://www.crazyegg.com/blog/website-color-palettes/).
+-	A clear, easy to read, friendly style of font was wanted, I decided on ....... as I thought this matches these particular requirements.
