@@ -11,6 +11,7 @@
         {{ recipe.recipe_serves }}<br>
         {{ recipe.recipe_time }}<br>
         {{ recipe.recipe_vegetarian }}<br>
+        {{ recipe.recipe_addedby }}<br>
     {% endfor %}
 
     <div class="row">
@@ -18,11 +19,11 @@
         <div class="col s12 m4">
             <div class="card small">
                 <div class="card-image">
-                    <img src="{{ recipe.recipe_image }}">
+                    <a href="#"><img src="{{ recipe.recipe_image }}"></a>
                     <span class="card-title">{{ recipe.recipe_name }}</span>
                 </div>
                 <div class="card-content">
-                    <p></p>
+                    <p>{{ recipe.recipe_name }}</p>
                 </div>
                 <div class="card-action">
                     <a href="#">This is a link</a>
