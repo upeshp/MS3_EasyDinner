@@ -13,4 +13,25 @@
         {{ recipe.recipe_vegetarian }}<br>
     {% endfor %}
 
+    <div class="row">
+        {% for recipe in recipes %}
+        <div class="col s12 m4">
+            <div class="card small">
+                <div class="card-image">
+                    <img src="{{ recipe.recipe_image }}">
+                    <span class="card-title">{{ recipe.recipe_name }}</span>
+                </div>
+                <div class="card-content">
+                    <p></p>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+
+
 {% endblock %}
