@@ -10,8 +10,9 @@
                 <img class="recipe-image" src="{{ recipe.recipe_image }}" alt="">
             </div>
             <div class="col s12 m6">
+                <p>Ingredients</p>   
                 {% for line in recipe.recipe_ingredients.splitlines() %}
-                    <ul>{{ line }}</ul>
+                        <p>{{ line }}</p>       
                 {% endfor %}
             </div>
         </div>
@@ -19,24 +20,25 @@
         <div class="row">
             <div class="col s12">
                 {% for line in recipe.recipe_method.splitlines() %}
-                    <ul>{{ line }}</ul>
+                    <p>{{ line }}</p>
                 {% endfor %}
             </div>
         </div>
 
-        <div class="row">
-            <div class="col">
-                {{ recipe.recipe_serves }}
+        <div class="center-align">
+            <div class="chip">
+                <i class="fas fa-user-friends"></i>
+                Serves: {{ recipe.recipe_serves }}
             </div>
-            <div class="col">
-                {{ recipe.recipe_time }}
+            <div class="chip"><i class="far fa-clock"></i>
+                Time: {{ recipe.recipe_time }} mins
             </div>
-            <div class="col">
-                {{ recipe.recipe_vegetarian }}
+            <div class="chip"><i class="fas fa-carrot"></i>
+                Vegetarian: {{ recipe.recipe_vegetarian }}
             </div>
         </div>
         
-        <p class="center-align">{{ recipe.recipe_addedby }}</p>
+        <p class="center-align">Added by: {{ recipe.recipe_addedby }}</p>
   
 
     
