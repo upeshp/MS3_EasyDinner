@@ -3,7 +3,7 @@
 
     <h2 class="center-align">Recipes</h2>
 
-    
+        <!-- Search -->
         <form action="{{ url_for('search') }}" method="POST" class="col s12">
             <div class="row center-align">
                 <div class="input-field col s12">
@@ -19,43 +19,23 @@
                 </div>
             </div>
         </form>
-    
-        <!-- <div class="collapse" id="search-nav"> -->
-            <!-- <form class="navbar-left navbar-form nav-search ml-md-3 mr-md-3" action=""> -->
-                <!-- <div class="input-group"> -->
-                    <!-- <input type="text" placeholder="Search ..." class="form-control"> -->
-                    <!-- <div class="input-group-append"> -->
-                        <!-- <button type="submit" class="btn btn-search"> -->
-                            <!-- <i class="fas fa-search"></i> -->
-                        <!-- </button> -->
-                    <!-- </div> -->
-                <!-- </div> -->
-            <!-- </form> -->
-        <!-- </div> -->
 
+        <!-- Recipes -->
     {% if recipes|length > 0 %}
     <div class="row">
         {% for recipe in recipes %}
-        <div class="col s12 m4">
+        <div class="col s12 m4 recipe-container">
             <div class="card small">
-                <div class="card-image">
-                    <a href="{{ url_for('recipe_details', recipe_id=recipe._id) }}"><img src="{{ recipe.recipe_image }}"></a>
-                    <span class="card-title">{{ recipe.recipe_name }}</span>
-                </div>
-                <div class="card-content">
-                    <p>{{ recipe.recipe_name }}</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                    <p><em>by: {{ recipe.recipe_addedby }}</em></p>
-                </div>
+                <a href="{{ url_for('recipe_details', recipe_id=recipe._id) }}">
+                    <img class="recipe-image" src="{{ recipe.recipe_image }}">
+                </a>
             </div>
-        </div>
+            <p>{{ recipe.recipe_name }}</p>
+        </div>        
         {% endfor %}
     </div>
     {% else %}
-        <h2 class="red-text">No results found!</h2>
+        <h2 class="red-text center-align">No results found!</h2>
     {% endif %}
-
 
 {% endblock %}
