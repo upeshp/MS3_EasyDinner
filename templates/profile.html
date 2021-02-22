@@ -10,9 +10,7 @@
             </div>
         </div>
     </div>
-
-  
-    
+ 
     <div class="row">
         {% for recipe in recipes if session.user|lower == recipe.recipe_addedby|lower %}
         <div class="col s12 m4 recipe-container">
@@ -31,9 +29,5 @@
         {% endfor %}
     </div>
     
-    
-    
-    
-
 {% endblock %}
 
