@@ -1,8 +1,34 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .text-shadow {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
+/* HEADERS */
+
+.page-header {
+    font-weight: bold;
+    color: teal;
+}
+
+/* RECIPE INGREDIENTS & METHOD TEXT */
+.details {
+    font-family: 'Roboto', sans-serif;
+}
+
+.added-by {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(155, 148, 148);
+}
+
 /* STYLING FOR RECIPE CARDS */
+
+.recipecard-title {
+    font-weight: bold;
+}
 
 .recipe-container {
     line-height: 0;
