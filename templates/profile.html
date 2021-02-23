@@ -4,9 +4,9 @@
     <div class="row">
         <div class="col s12 m8 offset-m2">
             <!-- <div class="card-panel"> -->
-                <h3 class="center-align page-header">
+                <h4 class="center-align page-header">
                     {{ username }}'s Profile
-                </h3>
+                </h4>
             <!-- </div> -->
         </div>
     </div>
@@ -19,7 +19,7 @@
                     <img class="recipe-image" src="{{ recipe.recipe_image }}">
                 </a>
             </div>
-            <p>{{ recipe.recipe_name }}</p>
+            <p class="recipecard-title">{{ recipe.recipe_name }}</p>
             <div class="card-action">
                 <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small">Edit</a>
                 <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small tooltipped" data-position="bottom"
