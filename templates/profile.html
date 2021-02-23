@@ -10,6 +10,16 @@
             <!-- </div> -->
         </div>
     </div>
+
+    <div class="row">
+        <div class="col s4">
+        </div>
+        <div class="col s4 center-align">
+            <a href="{{ url_for('add_recipe') }}" class="btn-small">Add Recipe</a>
+        </div>
+        <div class="col s4">
+        </div>
+    </div>
  
     <div class="row">
         {% for recipe in recipes if session.user|lower == recipe.recipe_addedby|lower %}
@@ -23,7 +33,7 @@
             <div class="card-action">
                 <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small">Edit</a>
                 <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small tooltipped" data-position="bottom"
-                    data-tooltip="Check before deleting!">Delete</a>
+                    data-tooltip="Make sure you want to delete before hitting the button!">Delete</a>
             </div>
         </div>  
         {% endfor %}
