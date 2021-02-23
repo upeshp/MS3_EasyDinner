@@ -52,7 +52,7 @@ def register():
 
         # put the new user into 'session' cookie
         session["user"] = request.form.get("username").lower()
-        flash("Registration Successful!")
+        flash("Registration successful!")
         return redirect(url_for("profile", username=session["user"]))
 
     return render_template("register.html")
@@ -76,12 +76,12 @@ def login():
                             "profile", username=session["user"]))
             else:
                 # invalid password match
-                flash("Incorrect Username and/or Password")
+                flash("Incorrect username and/or password")
                 return redirect(url_for("login"))
 
         else:
             # username doesn't exist
-            flash("Incorrect Username and/or Password")
+            flash("Incorrect username and/or password")
             return redirect(url_for("login"))
 
     return render_template("login.html")
@@ -125,7 +125,7 @@ def add_recipe():
             "recipe_addedby": session["user"]
         }
         mongo.db.recipes.insert_one(recipe)
-        flash("All Done!")
+        flash("Recipe added!")
         return redirect(url_for("get_recipes"))
 
     return render_template("add_recipe.html")
@@ -147,7 +147,7 @@ def edit_recipe(recipe_id):
             "recipe_addedby": session["user"]
         }
         mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, submit)
-        flash("Updated!")
+        flash("Recipe updated!")
 
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
 
@@ -157,7 +157,7 @@ def edit_recipe(recipe_id):
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
-    flash("Delete Done!")
+    flash("Recipe deleted!")
     return redirect(url_for("get_recipes"))
 
 
