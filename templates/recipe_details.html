@@ -22,9 +22,11 @@
                             </div>
                         </li>
                         <li>
-                            <div class="chip"><i class="fas fa-carrot"></i>
-                                Vegetarian: {{ recipe.recipe_vegetarian }}
-                            </div>
+                            {% if recipe.recipe_vegetarian == "on" %}
+                                <div class="chip"><i class="fas fa-carrot"></i>
+                                Vegetarian
+                                </div>
+                            {% endif %}
                         </li>
                     </ul>
                 </div>
