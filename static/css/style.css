@@ -102,3 +102,12 @@ nav .brand-logo {
     position: relative;
 }
 
+
+/* footer social links */
+.social-links a {
+    padding: 3px;
+}
+
+.footer-copyright {
+    font-size: 12px;
+}
