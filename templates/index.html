@@ -1,5 +1,35 @@
 {% extends "base.html" %}
 {% block content %}
 
+<div>
+    <div class="home-image">
+    <div>
+        <h1 class="center-align" style="font-family: 'Pacifico', cursive; color: teal;">EasyDinner</h1>
+        <div class="divider"></div>
+        <p class="center-align" style="color: #fff; font-size: 20px;">Stuck for dinner inspiration? Find quick, easy, delicious family meals at EasyDinner!</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col s12 m6">
+            <h5 class="center-align page-header">Recipes</h5>
+            <div class="divider"></div>
+            <p class="center-align">We have a collection of family recipes, which are easy to make. Start searching our recipes here!</p>
+            <div class="center-align">
+            <a href="{{ url_for('get_recipes') }}" class="btn-small">Recipes</a>
+            </div>
+        </div>
+        <div class="col s12 m6">
+            <h5 class="center-align page-header">Registered?</h5>
+            <div class="divider"></div>
+            <p class="center-align">Register to receive our weekly newsletter with the latest recipes, and to start sharing your own recipes!</p>
+            <div class="center-align">
+            <a href="{{ url_for('register') }}" class="btn-small">Register</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 {% endblock %}
