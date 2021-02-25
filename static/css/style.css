@@ -48,6 +48,7 @@ nav .brand-logo {
 .recipe-image {
     width: 100%; 
     height: 100%; 
+    border-radius: 5px;
     display: block; 
     margin: 0;
 }
@@ -71,7 +72,7 @@ nav .brand-logo {
     transition: -webkit-box-shadow .25s;
     transition: box-shadow .25s;
     transition: box-shadow .25s, -webkit-box-shadow .25s;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
 .card.small {
