@@ -9,15 +9,16 @@
             <div class="row">
                 <div class="input-field col s12">
                     <!-- <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i> -->
-                    <input id="recipe_name" name="recipe_name" minlength="5" maxlength="100" 
+                    <input id="recipe_name" name="recipe_name" maxlength="40" 
                         value="{{ recipe.recipe_name }}" type="text" class="validate" required>
                     <label for="recipe_name">Recipe Name</label>
+                    <span class="register-help">40 characters max</span>    
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s12">
                     <!-- <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i> -->
-                    <input id="recipe_image" name="recipe_image" minlength="5" maxlength="100" 
+                    <input id="recipe_image" name="recipe_image" minlength="3" maxlength="5000" 
                         value="{{ recipe.recipe_image }}" type="text" class="validate" required>
                     <label for="recipe_image">Image URL</label>
                     <span class="register-help">Please enter the URL for your recipe image</span>
@@ -26,7 +27,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <!-- <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i> -->
-                    <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="5"
+                    <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="3"
                         maxlength="200" class="materialize-textarea validate" required>
                         {{- recipe.recipe_ingredients -}}
                     </textarea>
@@ -37,7 +38,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <!-- <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i> -->
-                    <textarea id="recipe_method" name="recipe_method" minlength="5"
+                    <textarea id="recipe_method" name="recipe_method" minlength="3"
                         maxlength="200" class="materialize-textarea validate" required>
                         {{- recipe.recipe_method -}}
                     </textarea>
