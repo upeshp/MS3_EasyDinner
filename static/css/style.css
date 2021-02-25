@@ -132,3 +132,8 @@ nav .brand-logo {
     font-size: 20px; 
     font-weight: bold;
 }
+
+.section-noresults {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}

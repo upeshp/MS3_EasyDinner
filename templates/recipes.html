@@ -36,7 +36,11 @@
         {% endfor %}
     </div>
     {% else %}
-        <h2 class="red-text center-align">No results found!</h2>
+    <div class="section-noresults">
+    <div class="row">  
+    <h4 class="page-header center-align">No results found!</h4>
+    </div>  
+    </div>
     {% endif %}
 </div>
 {% endblock %}
