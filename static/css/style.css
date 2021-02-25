@@ -18,7 +18,9 @@ nav .brand-logo {
     padding: 0;
 }
 
-
+.sidenav h5 {
+    font-family: 'Pacifico', cursive;
+}
 
 .page-header {
     font-weight: bold;
