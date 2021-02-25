@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <!-- <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i> -->
-                    <input id="recipe_name" name="recipe_name" maxlength="40" 
+                    <input id="recipe_name" name="recipe_name" minlength="1" maxlength="40" 
                         value="{{ recipe.recipe_name }}" type="text" class="validate" required>
                     <label for="recipe_name">Recipe Name</label>
                     <span class="register-help">40 characters max</span>    
@@ -28,7 +28,7 @@
                 <div class="input-field col s12">
                     <!-- <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i> -->
                     <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="3"
-                        maxlength="200" class="materialize-textarea validate" required>
+                        class="materialize-textarea validate" required>
                         {{- recipe.recipe_ingredients -}}
                     </textarea>
                     <label for="recipe_ingredients">Ingredients</label>
@@ -39,7 +39,7 @@
                 <div class="input-field col s12">
                     <!-- <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i> -->
                     <textarea id="recipe_method" name="recipe_method" minlength="3"
-                        maxlength="200" class="materialize-textarea validate" required>
+                        class="materialize-textarea validate" required>
                         {{- recipe.recipe_method -}}
                     </textarea>
                     <label for="recipe_method">Method</label>
