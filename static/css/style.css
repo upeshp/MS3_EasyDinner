@@ -143,3 +143,17 @@ nav .brand-logo {
 .section-userrecipes {
     padding-bottom: 18rem;
 }
+
+.chip {
+    display: inline-block;
+    height: 32px;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.6);
+    line-height: 32px;
+    padding: 0 12px;
+    border-radius: 16px;
+    background-color: rgb(180, 228, 228);
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
