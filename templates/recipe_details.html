@@ -54,6 +54,12 @@
         </div>
         
         <p class="center-align added-by">Added by: {{ recipe.recipe_addedby }}</p>
+
+        <div class="section">
+        <div class="center-align">
+            <a href="{{ url_for('get_recipes') }}" class="btn-small">Back</a>
+        </div>
+        </div>
 </div>
 
 {% endblock %}
