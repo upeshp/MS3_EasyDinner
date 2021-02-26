@@ -1,36 +1,42 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div>
-    <div class="home-image">
+    <!-- Hero image section -->
     <div>
-        <h1 class="center-align">EasyDinner</h1>
-        <div class="divider"></div>
-        <p class="center-align">Stuck for dinner inspiration? Find quick, easy, delicious family meals at EasyDinner!</p>
-    </div>
-</div>
-
-
-<div class="container home-info">
-    <div class="row">
-        <div class="col s12 m6">
-            <h5 class="center-align page-header">Recipes</h5>
+        <!-- Background image container -->
+        <div class="home-image">
+        <!-- Text on hero image -->
+        <div>
+            <h1 class="center-align">EasyDinner</h1>
             <div class="divider"></div>
-            <p class="center-align home-text">EasyDinner is a recipe sharing website providing a collection of family recipes, which are simple and quick to make. Start searching our recipes here!</p>
-            <div class="center-align">
-            <a href="{{ url_for('get_recipes') }}" class="btn-small">Recipes</a>
-            </div>
-        </div>
-        <div class="col s12 m6">
-            <h5 class="center-align page-header">Registered?</h5>
-            <div class="divider"></div>
-            <p class="center-align home-text">Register to receive our weekly newsletter with the latest recipes, and to start sharing your own recipes!</p>
-            <div class="center-align">
-            <a href="{{ url_for('register') }}" class="btn-small">Register</a>
-            </div>
+            <p class="center-align">Stuck for dinner inspiration? Find quick, easy, delicious family meals at EasyDinner!</p>
         </div>
     </div>
-</div>
 
+    <!-- Homepage info text section -->
+    <div class="container home-info">
+        <div class="row">
+            <!-- Introductory text section: about site -->
+            <div class="col s12 m6">
+                <h5 class="center-align page-header">Recipes</h5>
+                <div class="divider"></div>
+                <p class="center-align home-text">EasyDinner is a recipe sharing website providing a collection of family
+                    recipes, which are simple and quick to make. Start searching our recipes here!</p>
+                <div class="center-align">
+                    <a href="{{ url_for('get_recipes') }}" class="btn-small">Recipes</a>
+                </div>
+            </div>
+            <!-- Introductory text section: abot registering -->
+            <div class="col s12 m6">
+                <h5 class="center-align page-header">Registered?</h5>
+                <div class="divider"></div>
+                <p class="center-align home-text">Register to receive our weekly newsletter with the latest recipes, and to
+                    start sharing your own recipes!</p>
+                <div class="center-align">
+                    <a href="{{ url_for('register') }}" class="btn-small">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 {% endblock %}
