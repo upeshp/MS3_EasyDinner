@@ -1,14 +1,25 @@
+/* --- GENERAL --- */
+
+/* Google fonts */
 body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Text shadow effect on navbar & footer */
 .text-shadow {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* HEADERS */
+/* Page headers on top of each html template */
+.page-header {
+    font-weight: bold;
+    color: teal;
+}
 
+/* --- NAVBAR --- */
+
+/* Navbar Logo */
 nav .brand-logo {
     font-family: 'Pacifico', cursive;
     position: absolute;
@@ -18,55 +29,78 @@ nav .brand-logo {
     padding: 0;
 }
 
+/* Sidenav logo */
 .sidenav h5 {
     font-family: 'Pacifico', cursive;
 }
 
-.page-header {
-    font-weight: bold;
+/* --- FOOTER --- */
+
+/* Footer social links */
+.social-links a {
+    padding: 3px;
+}
+
+/* Footer copyright text */
+.footer-copyright {
+    font-size: 12px;
+}
+
+/* --- HOMEPAGE --- */
+
+/* Homepage hero image */
+.home-image {
+    background: url(/static/image/cooking4.jpg); /* Credit: image from pixabay */
+    height: 50vh;
+    width: 100%; 
+    opacity: 0.7;
+    margin-top: 0.5px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Homepage hero image overlaying logo */
+.home-image h1 {
+    font-family: 'Pacifico', cursive; 
     color: teal;
 }
 
-/* RECIPE INGREDIENTS & METHOD TEXT */
-.details {
-    font-family: 'Roboto', sans-serif;
-}
-
-.added-by {
-    font-family: 'Roboto', sans-serif;
-    color: rgb(155, 148, 148);
-}
-
-/* STYLING FOR RECIPE CARDS */
-
-.recipecard-title {
-    font-size: 12px;
+/* Homepage hero image overlaying text */
+.home-image p {
+    color: black; 
+    font-size: 20px; 
     font-weight: bold;
 }
 
+/* Homepage information text columns */
+.home-info .col {
+    width: 80%;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left: auto;
+    right: auto;
+}
+
+/* Homepage info text */
+.home-text {
+    font-size: 18px;
+}
+
+/* --- RECIPE CARDS --- */
+
+/* Container for recipe cards */
 .recipe-container {
     line-height: 0;
 }
 
-.recipe-image {
-    width: 100%; 
-    height: 100%; 
-    border-radius: 5px;
-    display: block; 
-    margin: 0;
-}
-
-/* .card-panel {
-    -webkit-transition: -webkit-box-shadow .25s;
-    transition: -webkit-box-shadow .25s;
-    transition: box-shadow .25s;
-    transition: box-shadow .25s, -webkit-box-shadow .25s;
-    padding: 0px;
-    margin: 2rem 0 1rem 0;
-    border-radius: 2px;
-    background-color: #fff;
-} */
-
+/* Recipe card */
 .card {
     position: relative;
     margin: 2rem 0 1rem 0;
@@ -78,74 +112,29 @@ nav .brand-logo {
     border-radius: 5px;
 }
 
+/* Card sizing */
 .card.small {
     height: 200px;
 }
 
-.register-help {
-    font-size: 12px;
-    color: rgb(155, 148, 148);
-}
-
-
-.home-image {
-    background: url(/static/image/cooking4.jpg); /* image from piaxabay */
-    height: 50vh;
+/* Recipe card image */
+.recipe-image {
     width: 100%; 
-    opacity: 0.7;
-    margin-top: 0.5px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    /* background-color: rgba(0,0,0,10); */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    position: relative;
+    height: 100%; 
+    border-radius: 5px;
+    display: block; 
+    margin: 0;
 }
 
-.home-info .col {
-    width: 80%;
-    margin-left: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    left: auto;
-    right: auto;
-}
-
-/* footer social links */
-.social-links a {
-    padding: 3px;
-}
-
-.footer-copyright {
+/* Recipe name at bottom of recipe card */
+.recipecard-title {
     font-size: 12px;
-}
-
-/* homepage hero image */
-
-.home-image h1 {
-    font-family: 'Pacifico', cursive; 
-    color: teal;
-}
-
-.home-image p {
-    color: black; 
-    font-size: 20px; 
     font-weight: bold;
 }
 
-.section-noresults {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-}
+/* --- RECIPE DETAILS --- */
 
-.section-userrecipes {
-    padding-bottom: 18rem;
-}
-
+/* Recipe information chips */
 .chip {
     display: inline-block;
     height: 32px;
@@ -160,6 +149,36 @@ nav .brand-logo {
     margin-right: 5px;
 }
 
-.home-text {
-    font-size: 18px;
+/* Recipe method text */
+.details {
+    font-family: 'Roboto', sans-serif;
 }
+
+/* Added by username text */
+.added-by {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(155, 148, 148);
+}
+
+/* Profile page user recipes bottom padding to extend display */
+.section-userrecipes {
+    padding-bottom: 18rem;
+}
+
+/* --- OTHER --- */
+
+/* Help text for registering */
+.register-help {
+    font-size: 12px;
+    color: rgb(155, 148, 148);
+}
+
+/* No search results text */
+.section-noresults {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+
+
+
