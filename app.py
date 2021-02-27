@@ -101,7 +101,7 @@ def profile(username):
 
     if session["user"]:
         return render_template("profile.html",
-        username=username, recipes=recipes)
+                               username=username, recipes=recipes)
 
     return redirect(url_for("login"))
 
@@ -175,4 +175,4 @@ def recipe_details(recipe_id):
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=True) 
+            debug=True)
