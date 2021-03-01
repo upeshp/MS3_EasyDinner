@@ -80,6 +80,81 @@ In line with the features identified in the scope section, the website will be s
 **Surface** 
 
 -	The colour scheme will be influenced from the research detailed in the scope section above.
--	The websites tend to use simple colour schemes, with green often being used.
--	Green is associated with being peaceful and healthy, which is perfect for this site, so this colour will be used in my site for any main features, along with grey, which is associated with being peaceful/calm [Source: CrazyEgg](https://www.crazyegg.com/blog/website-color-palettes/).
--	A clear, easy to read, friendly style of font was wanted, I decided on ....... as I thought this matches these particular requirements.
+-	The websites tend to use simple colour schemes, with green/teal often being used.
+-	Green is associated with being peaceful and healthy, which is perfect for this site, so this colour will be used in my site for any main features [Source: CrazyEgg](https://www.crazyegg.com/blog/website-color-palettes/).
+-	A clear, easy to read, friendly style of font was wanted, I decided on a combination of Open Sans/Roboto (Google Fonts) as I thought this matches these particular requirements.
+
+## Features
+
+_Existing_
+
+The website uses Materialize CSS features:
+
+-   Navbar (top navbar)
+-	Sidenav (to turn into sidenav on mobile)
+- 	Cards (to display recipes)
+-   Forms (to add/edit recipes)
+- 	Buttons (for links to other pages and add/edit/delete actions)
+- 	Footer (bottom footer)
+-   Tooltip (to display message on delete button)
+-   Chips (to display some recipe info)
+
+In addition the following features are used:
+
+-   Site linked to MongoDB database
+-   Search facility to search recipes
+-   Login/signup functionality to become a registered user
+-   User profile page displaying users recipes only
+-   Passwords are hashed so not shown on the database
+-   Full CRUD functionality included
+-   Custon 404/500 error pages
+
+_Left to Implement_
+
+The following features were considered during the build of the site, however due to time constraints, these were not included in this version, but could be added at a later date:
+
+- 	Ability to rate/mark a recipe as a favourite
+-	Introducing recipe categories e.g. vegetarian/quick/easy etc which can then be filtered
+-	Pagination to ensure not too many recipes displayed on 1 page
+-   Displaying latest or featured recipes on homepage
+-   See unresolved bugs section in Testing for further features left to implement
+
+## Technologies Used
+
+Languages:
+- 	HTML5
+-	CSS3
+-	Javascript
+-	Python (incl. Jinja)
+
+Database:
+-   MongoDB
+
+Frameworks:
+-   Materialize CSS
+-   Flask
+-   Jquery
+
+Storing/editing/deploying Code:
+-	Gitpod
+-	Github
+-   Heroku
+
+Other:
+-   Google Fonts
+-   Font Awesome
+
+## Testing
+
+See ........
+
+## Deployment
+
+........
+
+## Credits
+
+_Tutorials_
+
+Used the Code Institute Task Manger Mini-Project as the main basis of my own project
+
