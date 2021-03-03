@@ -9,15 +9,24 @@ I am designing a recipe sharing database website. The website will contain recip
 ## Index
 
 - <a href="#UX">UX</a>
+    - <a href="#Overview">Overview</a>
+    - <a href="#Stories">User Stories</a>
+    - <a href="#5S">5 S's</a>
 - <a href="#Features">Features</a>
+    - <a href="#Existing">Existing</a>
+    - <a href="#Left">Left to Implement</a>
 - <a href="#Technologies">Technologies Used</a>
 - <a href="#Testing">Testing</a>
 - <a href="#Deployment">Deployment</a>
+    - <a href="#Heroku">Heroku</a>
+    - <a href="#GitHub">GitHub</a>
 - <a href="#Credits">Credits</a>
 
 <span id="UX"></span>
 
 ## UX
+
+<span id="Overview"></span>
 
 _Overview_
 
@@ -26,6 +35,8 @@ The website is designed to cater to those specifically looking for recipes which
 As this website will contain an active database, there will be an option for users to signup to add their own recipes.
 The website is designed to be suitable for use on all devices, from desktop to mobile. 
 
+<span id="Stories"></span>
+
 _User Stories_
 	
    *	I want the website to be intuitive, so I can get an impression of what it does from first glance.
@@ -33,7 +44,9 @@ _User Stories_
    *	I want the recipe listing feature to be searchable, so I can search for specific recipes I may be interested in.
    *	I want an easy way to login or signup to the website.
    *	I want it to be easy to add/edit a recipe.
-	
+
+<span id="5S"></span>
+
 _5 S's_
 
 **Strategy** 
@@ -103,6 +116,8 @@ In line with the features identified in the scope section, the website will be s
 
 ## Features
 
+<span id="Existing"></span>
+
 _Existing_
 
 The website uses Materialize CSS features:
@@ -125,6 +140,8 @@ In addition the following features are used:
 -   Passwords are hashed so not shown on the database
 -   Full CRUD functionality included
 -   Custon 404/500 error pages
+
+<span id="Left"></span>
 
 _Left to Implement_
 
@@ -172,6 +189,8 @@ Testing documentation can be found [here](https://github.com/upeshp/MS3_EasyDinn
 <span id="Deployment"></span>
 
 ## Deployment
+
+<span id="Heroku"></span>
 
 _Deployment to Heroku_
 
@@ -249,6 +268,8 @@ _Deployment to Heroku_
 7.	That should take a minute to build, once it's done, you'll see ‘Your app was successfully deployed.’ Click ‘View’ to launch your new app.
     
     ![view](static/image/readme/deployment7.png)
+
+<span id="GitHub"></span>
 
 _GitHub_
 
