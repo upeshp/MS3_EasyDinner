@@ -164,6 +164,7 @@ The following details any issues which remain unresolved:
 
  - Modal for confirming recipe deletion:
 	- For the recipe delete button, it would be preferred to have a modal popup and ask the user to confirm their intention to delete for better defensive programming.
+    - When attempting to implement this, the modal was deleting the first recipe on the page, instead of the "selected" recipe, as all recipes are displayed on one page.
 	- Due to timing constraints, I used a Materialize CSS tooltip instead to display a warning message instead, when hovering over the delete button.
 
     
