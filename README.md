@@ -255,5 +255,11 @@ To clone the code from GitHub:
 
 _Tutorials_
 
-Used the Code Institute Task Manger Mini-Project as the main basis of my own project
+Used the Code Institute Task Manger Mini-Project by [Tim Nelson](https://github.com/TravelTimN) as the main basis of my own project.
 
+_Slack Community_
+
+There were several helpful tips I found from searching on Slack when completing this project, in particular from:
+
+[Ed B](https://github.com/Edb83)
+[Igor CI](https://code-institute-room.slack.com/team/UPDFEU62U)
