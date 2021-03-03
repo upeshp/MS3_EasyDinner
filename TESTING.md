@@ -13,23 +13,23 @@ I used GT Metrix to analyse the speed of the website, which gave an overall grad
 _User Stories_
 
 Intuitive:
- - The title of the site gives an idea of it's purpose
- - The homepage displays a suitable hero image, and overlaying headline explaining the site's purpose
- - There are further details about the site included below the hero image/on the footer
+ - The title of the site gives an idea of its purpose.
+ - The homepage displays a suitable hero image, and overlaying headline explaining the site's purpose.
+ - There are further details about the site included below the hero image/on the footer.
 
 Presentation:
- - Used Materialize CSS to present in a clean grid format
- - Simple colour scheme used with plenty of white spaces to keep things clean and not overwhelm user
+ - Used Materialize CSS to present in a clean grid format.
+ - Simple colour scheme used with plenty of white spaces to keep things clean and not overwhelm user.
 
 Searchable:
- - Clear search funstion at top of recipes page, enabling searching by recipe title/ingredients
+ - Clear search function at top of recipes page, enabling searching by recipe title/ingredients.
 
 Easy login/signup:
- - Two simple pages for these functions, where only 2 inputs are required, and clear instructions given regarding the requirements for these inputs
+ - Two simple pages for these functions, where only 2 inputs are required, and clear instructions displayed regarding the requirements for these inputs.
 
 Add/edit recipe:
- - Buttons for these functions have been included for these functions on the profile page
- - Add Recipe also appears on the navbar (once user is logged in)
+ - Buttons for these functions have been included for these functions on the profile page.
+ - Add Recipe also appears on the navbar (once user is logged in).
 
 _Features_
 
@@ -113,13 +113,24 @@ _Bugs_
 
 The following details any issues I came across which are now resolved, for reference:
 
- - Displaying the recipe ingredients/method on seperate lines: to get each ingredient/step to display on a seperate line, I used splitlines in my jinja code, and prompted the user to enter each ingredient/step on the input form (Credit: searched on Slack and https://www.javatpoint.com/how-to-split-a-string-in-java-with-delimiter#:~:text=In%20Java,%20splitting%20string%20is%20an%20important%20and,the%20split%20()%20method%20of%20the%20String%20class.)
- - Displaying individual recipe details: to call up individual recipe details on the recipe_details page, used find_one in the relevant section on app.py (Credit: searched on Slack, saw solution from igor_ci)
- - Displaying user recipes only on profile page: to display users recipes only, added if statement (if session.user|lower == recipe.recipe_addedby|lower) in jinja (Used Code Institute mini-project tutorial as basis, and modified code)
- - Displaying full-width hero image: wanted hero image on homepage to be full-width, found that Materialize CSS "container" class doesn't stretch to full width, so removed this class from the base template (Used dev tools to see "container" properties)
- - Custom 404/500 error pages: didn't know how to action this, searched on Slack where someone had provided solution (Credit: searched on Slack, saw solution from Heather) 
- - Improving loading time by adding lazy loading to images: found out about this from searching on Slack, implemented in this project as site is image heavy (Credit: searched on Slack, saw link to article from Antonio)
-
+ - Displaying the recipe ingredients/method on seperate lines: to get each ingredient/step to display on a seperate line, I used splitlines in my jinja code, and prompted the user to enter each ingredient/step on the input form 
+    - Searched on Slack and found this online [Javatpoint](https://www.javatpoint.com/how-to-split-a-string-in-java-with-delimiter#:~:text=In%20Java,%20splitting%20string%20is%20an%20important%20and,the%20split%20()%20method%20of%20the%20String%20class.)
+ 
+ - Displaying individual recipe details: to call up individual recipe details on the recipe_details page, used find_one in the relevant section on app.py:
+    - Searched on Slack, saw solution from [Igor Basuga](https://code-institute-room.slack.com/team/UPDFEU62U)
+ 
+ - Displaying user recipes only on profile page: to display users recipes only, added if statement (if session.user|lower == recipe.recipe_addedby|lower) in jinja:
+    - Used Code Institute Task Manger Mini-Project by [Tim Nelson](https://code-institute-room.slack.com/team/UBVE86CJC) as the basis and modified code for my intended purpose.
+ 
+ - Displaying full-width hero image: wanted hero image on homepage to be full-width, found that Materialize CSS "container" class doesn't stretch to full width, so removed this class from the base template: 
+    - Used dev tools to see "container" CSS properties 
+    
+ - Custom 404/500 error pages: didn't know how to action this, searched on Slack where someone had provided solution:
+    - Searched on Slack, saw solution from [Heather Olcot](https://code-institute-room.slack.com/team/U9CBT421G) 
+ 
+ - Improving loading time by adding lazy loading to images: 
+    - Searced on Slack, read about this in a post from [Antonio Augello](https://code-institute-room.slack.com/team/UCS5Q5LKH)
+    
 The following details any issues which remain unresolved:
 
  - Forcing URL: at the moment it is possible to "force" the URL to add/edit/delete recipes into the browser:
