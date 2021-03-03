@@ -150,7 +150,45 @@ See ........
 
 ## Deployment
 
-........
+_Deployment to Heroku_
+
+1.  Setup files which Heroku needs in your terminal:
+    requirements.txt: tells Heroku which applications and dependencies are required to run our app
+    Procfile: what Heroku looks for to know which file runs the app (use capital P for Procfile, and delete blank line at bottom of Procfile as may cause problems when running on Heroku)
+2.  Go to Heroku, once logged into your dashboard, click ‘Create new app’:
+    Create app name (must be unique, and generally use a 'dash' or 'minus' instead of spaces, and all lowercase letters)
+    Choose region closest to you
+    Then click ‘Create app’
+3.	Setup automatic deployment from your GitHib repository:
+    Make sure your GitHub profile is displayed
+    Then add your repository name
+    Click ‘Search’
+    Once it finds your repo, click to connect to this app
+4.	Click on ‘Settings’:
+    Then click ‘Reveal Config Vars’
+    Then enter the variables (from the env.py) file to securely tell Heroku which variables are required:
+    IP
+    PORT
+    MONGO_DBNAME
+    MONGO_URI
+    SECRET_KEY
+5.	Push two new files (requirements.txt and Profile) to repository, in terminal, add/commit/push these
+6.	Back in Heroku, can now safely ‘Enable Automatic Deployment’
+    Then ‘Deploy Branch’
+7.	That should take a minute to build, once it's done, you'll see ‘Your app was successfully deployed.’ Click ‘View’ to launch your new app.
+
+_GitHub_
+
+To clone the code from GitHub:
+
+1.	On GitHub, navigate to the main page of the repository.
+2.	Above the list of files, click Code.
+3.	To clone the repository using HTTPS, click HTTPS under "Clone".
+4.	Open Git Bash.
+5.	Change the current working directory to the location where you want the cloned directory.
+6.	Type git clone, and then paste the URL you copied earlier:
+    $ git clone https://github.com/YOUR-USERNAME/MS3_EasyDinner.git
+7.	Press Enter to create your local clone.
 
 ## Credits
 
