@@ -1,14 +1,28 @@
 ## Testing
 
+## Index
+- <a href="#Validators">Code Validators</a>
+- <a href="#Speed">Speed</a>
+- <a href="#User">User Stories</a>
+- <a href="#Feat">Features</a>
+- <a href="#Resp">Responsiveness</a>
+- <a href="#Bugs">Bugs</a>
+
+<span id="Validators"></span>
+
 _Code Validators_
 
 All code passed validation tests from the [HTML](https://validator.w3.org/) and [CSS](https://jigsaw.w3.org/css-validator/) validation websites.
 
 The python code passed the [PEP8](http://pep8online.com/) compliance test.
 
+<span id="Speed"></span>
+
 _Speed_
 
 I used [GT Metrix](https://gtmetrix.com/) to analyse the speed of the website, which gave an overall grade of A.
+
+<span id="User"></span>
 
 _User Stories_
 
@@ -30,6 +44,8 @@ Easy login/signup:
 Add/edit recipe:
  - Buttons for these functions have been included for these functions on the profile page.
  - Add Recipe also appears on the navbar (once user is logged in).
+
+<span id="Feat"></span>
 
 _Features_
 
@@ -101,6 +117,7 @@ ADD RECIPE
  - The "serves/time/vegetarian" inputs are all displayed on the recipe details page within materialize chip elements
  	- The vegetarian chip element only appears when the vegetarian checkbox has been checked on the add/edit recipe form
 
+<span id="Resp"></span>
 
 _Responsiveness_
 	
@@ -108,6 +125,7 @@ I tested the website by changing the screen size on my display, and using the in
 
 I tested the website on various browsers/devices which were available to me.
 
+<span id="Bugs"></span>
 
 _Bugs_
 
