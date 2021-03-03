@@ -153,45 +153,79 @@ See ........
 _Deployment to Heroku_
 
 1.  Setup files which Heroku needs in your terminal:
-    - requirements.txt: tells Heroku which applications and dependencies are required to run our app
-    - Procfile: what Heroku looks for to know which file runs the app (use capital P for Procfile, and delete blank line at bottom of Procfile as may cause problems when running on Heroku)
-    - ![setup files](static/image/readme/deployment1.png)
+
+    requirements.txt: tells Heroku which applications and dependencies are required to run our app
+    
+    Procfile: what Heroku looks for to know which file runs the app (use capital P for Procfile, and delete blank line at bottom of Procfile as may cause problems when running on Heroku)
+    
+    ![setup files](static/image/readme/deployment1.png)
+
 2.  Go to Heroku, once logged into your dashboard, click ‘Create new app’:
-    - ![new app](static/image/readme/deployment2a.png)
-    - Create app name (must be unique, and generally use a 'dash' or 'minus' instead of spaces, and all lowercase letters)
-    - ![app name](static/image/readme/deployment2b.png)
-    - Choose region closest to you
-    - ![region](static/image/readme/deployment2c.png)
-    - Then click ‘Create app’
-    - ![create app](static/image/readme/deployment2c.png)
+
+    ![new app](static/image/readme/deployment2a.png)
+    
+    Create app name (must be unique, and generally use a 'dash' or 'minus' instead of spaces, and all lowercase letters)
+    
+    ![app name](static/image/readme/deployment2b.png)
+    
+    Choose region closest to you
+    
+    ![region](static/image/readme/deployment2c.png)
+    
+    Then click ‘Create app’
+    
+    ![create app](static/image/readme/deployment2c.png)
+
 3.	Setup automatic deployment from your GitHib repository:
-    - ![auto deploy](static/image/readme/deployment3a.png)
+
+    ![auto deploy](static/image/readme/deployment3a.png)
+    
     Make sure your GitHub profile is displayed
-    - ![profile](static/image/readme/deployment3b.png)
+    
+    ![profile](static/image/readme/deployment3b.png)
+    
     Then add your repository name
-    - ![repo name](static/image/readme/deployment3c.png)
+    
+    ![repo name](static/image/readme/deployment3c.png)
+    
     Click ‘Search’
-    - ![search](static/image/readme/deployment3d.png)
+    
+    ![search](static/image/readme/deployment3d.png)
+    
     Once it finds your repo, click to connect to this app
-    - ![connect](static/image/readme/deployment3e.png)
+    
+    ![connect](static/image/readme/deployment3e.png)
+
 4.	Click on ‘Settings’:
-    - ![settings](static/image/readme/deployment4a.png)
+    
+    ![settings](static/image/readme/deployment4a.png)
+    
     Then click ‘Reveal Config Vars’
-    - ![config](static/image/readme/deployment4b.png)
+    
+    ![config](static/image/readme/deployment4b.png)
+    
     Then enter the variables (from the env.py) file to securely tell Heroku which variables are required:
-    - IP
-    - PORT
-    - MONGO_DBNAME
-    - MONGO_URI
-    - SECRET_KEY
+    IP
+    PORT
+    MONGO_DBNAME
+    MONGO_URI
+    SECRET_KEY
+
 5.	Push two new files (requirements.txt and Profile) to repository, in terminal, add/commit/push these:
-    - ![push](static/image/readme/deployment5.PNG)
+    
+    ![push](static/image/readme/deployment5.PNG)
+
 6.	Back in Heroku, can now safely ‘Enable Automatic Deployment’:
-    - ![enable](static/image/readme/deployment6a.png)
+    
+    ![enable](static/image/readme/deployment6a.png)
+
     Then ‘Deploy Branch’
-    - ![deploy](static/image/readme/deployment6b.png)
+    
+    ![deploy](static/image/readme/deployment6b.png)
+
 7.	That should take a minute to build, once it's done, you'll see ‘Your app was successfully deployed.’ Click ‘View’ to launch your new app.
-    - ![view](static/image/readme/deployment7.png)
+    
+    ![view](static/image/readme/deployment7.png)
 
 _GitHub_
 
