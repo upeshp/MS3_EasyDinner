@@ -2,6 +2,8 @@
 
 I am designing a recipe sharing database website. The website will contain recipes for quick, easy family dinners.
 
+[Link to deployed site](https://ms3-easydinner.herokuapp.com/)
+
 ![picture](static/image/readme/responsive.PNG)
 
 ## UX
