@@ -155,14 +155,15 @@ _Deployment to Heroku_
 1.  Setup files which Heroku needs in your terminal:
     requirements.txt: tells Heroku which applications and dependencies are required to run our app
     Procfile: what Heroku looks for to know which file runs the app (use capital P for Procfile, and delete blank line at bottom of Procfile as may cause problems when running on Heroku)
-    !(static/image/readme/deployment1.png)
+    ![setup files](static/image/readme/deployment1.png)
 2.  Go to Heroku, once logged into your dashboard, click ‘Create new app’:
+    ![new app](static/image/readme/deployment2a.png)
     Create app name (must be unique, and generally use a 'dash' or 'minus' instead of spaces, and all lowercase letters)
-    !(static/image/readme/deployment2a.png)
+    ![app name](static/image/readme/deployment2b.png)
     Choose region closest to you
-    !(static/image/readme/deployment2b.png)
+    ![region](static/image/readme/deployment2c.png)
     Then click ‘Create app’
-    !(static/image/readme/deployment2c.png)
+    ![create app](static/image/readme/deployment2c.png)
 3.	Setup automatic deployment from your GitHib repository:
     !(static/image/readme/deployment3a.png)
     Make sure your GitHub profile is displayed
@@ -184,7 +185,7 @@ _Deployment to Heroku_
     MONGO_URI
     SECRET_KEY
 5.	Push two new files (requirements.txt and Profile) to repository, in terminal, add/commit/push these:
-    !(static/image/readme/deployment5.PNG)
+    ![](static/image/readme/deployment5.PNG)
 6.	Back in Heroku, can now safely ‘Enable Automatic Deployment’:
     !(static/image/readme/deployment6a.png)
     Then ‘Deploy Branch’
