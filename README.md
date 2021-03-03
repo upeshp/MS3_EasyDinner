@@ -320,8 +320,16 @@ _Student Projects_
 
 _Images_
 
-Hero image on homepage from [Pixabay](https://pixabay.com/)
+Hero image on homepage from [Pixabay](https://pixabay.com/).
 
+Recipe images from [Hello Fresh](https://www.hellofresh.co.uk/recipes/quick-recipes) 
+
+(Website created for educational purposes only, not intended to be used for commercial purposes)
+
+_Mentor_
+
+Code Institute mentor Akshat Garg.
+ 
 _Research_
 
 I used the following websites as a reference in the design process:
