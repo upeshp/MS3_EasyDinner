@@ -6,6 +6,17 @@ I am designing a recipe sharing database website. The website will contain recip
 
 ![picture](static/image/readme/responsive.PNG)
 
+## Index
+
+- <a href="#UX">UX</a>
+- <a href="#Features">Features</a>
+- <a href="#Technologies">Technologies Used</a>
+- <a href="#Testing">Testing</a>
+- <a href="#Deployment">Deployment</a>
+- <a href="#Credits">Credits</a>
+
+<span id="UX"></span>
+
 ## UX
 
 _Overview_
@@ -88,6 +99,8 @@ In line with the features identified in the scope section, the website will be s
 -	Green is associated with being peaceful and healthy, which is perfect for this site, so this colour will be used in my site for any main features [Source: CrazyEgg](https://www.crazyegg.com/blog/website-color-palettes/).
 -	A clear, easy to read, friendly style of font was wanted, I decided on a combination of Open Sans/Roboto (Google Fonts) as I thought this matches these particular requirements.
 
+<span id="Features"></span>
+
 ## Features
 
 _Existing_
@@ -123,6 +136,8 @@ The following features were considered during the build of the site, however due
 -   Displaying latest or featured recipes on homepage
 -   See unresolved bugs section in Testing for further features left to implement
 
+<span id="Technologies"></span>
+
 ## Technologies Used
 
 Languages:
@@ -148,9 +163,13 @@ Other:
 -   Google Fonts
 -   Font Awesome
 
+<span id="Testing"></span>
+
 ## Testing
 
 Testing documentation can be found [here](https://github.com/upeshp/MS3_EasyDinner/blob/master/TESTING.md)
+
+<span id="Deployment"></span>
 
 ## Deployment
 
@@ -254,6 +273,8 @@ To clone the code from GitHub:
      - os.environ.setdefault("SECRET_KEY", "enter value") 
      - os.environ.setdefault("MONGO_URI", "enter value") 
      - os.environ.setdefault("MONGO_DBNAME", "enter value")
+
+<span id="Credits"></span>
 
 ## Credits
 
