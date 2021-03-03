@@ -99,11 +99,9 @@ In line with the features identified in the scope section, the website will be s
 5. 	Profile:
 	-	Will include the facility to add users own recipes, as well as edit any recipes already submitted.
 
-
 **Skeleton** 
 
 [Wireframes](https://github.com/upeshp/MS3_EasyDinner/tree/master/assets/docs/wireframe)
-
 
 **Surface** 
 
@@ -313,6 +311,12 @@ I was able to resolve many issues encountered after searching on Slack in the Co
  - [Malia Havlicek](https://code-institute-room.slack.com/team/UERRFE54G)
  - [Heather Olcot](https://code-institute-room.slack.com/team/U9CBT421G)
  - [Antonio Augello](https://code-institute-room.slack.com/team/UCS5Q5LKH)
+
+_Student Projects_
+
+ - [Self Isolution](https://github.com/Edb83/self-isolution)
+ - [Wean Cuisine](https://github.com/Lucyjpjones/wean-cuisine)
+ - [McTastic Recipes](https://github.com/Sean-Mc-Mahon/McTasticRecipes)
 
 _Images_
 
