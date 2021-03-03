@@ -155,27 +155,42 @@ _Deployment to Heroku_
 1.  Setup files which Heroku needs in your terminal:
     requirements.txt: tells Heroku which applications and dependencies are required to run our app
     Procfile: what Heroku looks for to know which file runs the app (use capital P for Procfile, and delete blank line at bottom of Procfile as may cause problems when running on Heroku)
+    !(static/image/readme/deployment1.png)
 2.  Go to Heroku, once logged into your dashboard, click ‘Create new app’:
     Create app name (must be unique, and generally use a 'dash' or 'minus' instead of spaces, and all lowercase letters)
+    !(static/image/readme/deployment2a.png)
     Choose region closest to you
+    !(static/image/readme/deployment2b.png)
     Then click ‘Create app’
+    !(static/image/readme/deployment2c.png)
 3.	Setup automatic deployment from your GitHib repository:
+    !(static/image/readme/deployment3a.png)
     Make sure your GitHub profile is displayed
+    !(static/image/readme/deployment3b.png)
     Then add your repository name
+    !(static/image/readme/deployment3c.png)
     Click ‘Search’
+    !(static/image/readme/deployment3d.png)
     Once it finds your repo, click to connect to this app
+    !(static/image/readme/deployment3e.png)
 4.	Click on ‘Settings’:
+    !(static/image/readme/deployment4a.png)
     Then click ‘Reveal Config Vars’
+    !(static/image/readme/deployment4b.png)
     Then enter the variables (from the env.py) file to securely tell Heroku which variables are required:
     IP
     PORT
     MONGO_DBNAME
     MONGO_URI
     SECRET_KEY
-5.	Push two new files (requirements.txt and Profile) to repository, in terminal, add/commit/push these
-6.	Back in Heroku, can now safely ‘Enable Automatic Deployment’
+5.	Push two new files (requirements.txt and Profile) to repository, in terminal, add/commit/push these:
+    !(static/image/readme/deployment5.PNG)
+6.	Back in Heroku, can now safely ‘Enable Automatic Deployment’:
+    !(static/image/readme/deployment6a.png)
     Then ‘Deploy Branch’
+    !(static/image/readme/deployment6b.png)
 7.	That should take a minute to build, once it's done, you'll see ‘Your app was successfully deployed.’ Click ‘View’ to launch your new app.
+    !(static/image/readme/deployment7.png)
 
 _GitHub_
 
