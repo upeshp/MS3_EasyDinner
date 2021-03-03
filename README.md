@@ -233,12 +233,23 @@ To clone the code from GitHub:
 
 1.	On GitHub, navigate to the main page of the repository.
 2.	Above the list of files, click Code.
+
+    ![view](static/image/readme/deployment_github.png)
+
 3.	To clone the repository using HTTPS, click HTTPS under "Clone".
 4.	Open Git Bash.
 5.	Change the current working directory to the location where you want the cloned directory.
 6.	Type git clone, and then paste the URL you copied earlier:
-    $ git clone https://github.com/YOUR-USERNAME/MS3_EasyDinner.git
+    ```$ git clone https://github.com/YOUR-USERNAME/MS3_EasyDinner.git```
 7.	Press Enter to create your local clone.
+8.  Create your own env.py file to store variables:
+
+     - Import os 
+     - os.environ.setdefault("IP", "enter value") 
+     - os.environ.setdefault("PORT", "enter value") 
+     - os.environ.setdefault("SECRET_KEY", "enter value") 
+     - os.environ.setdefault("MONGO_URI", "enter value") 
+     - os.environ.setdefault("MONGO_DBNAME", "enter value")
 
 ## Credits
 
