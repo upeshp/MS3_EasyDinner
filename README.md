@@ -2,6 +2,8 @@
 
 I am designing a recipe sharing database website. The website will contain recipes for quick, easy family dinners.
 
+![picture](static/image/readme/responsive.PNG)
+
 ## UX
 
 _Overview_
@@ -27,7 +29,7 @@ The primary goal is to provide a searchable database of recipes for website user
 
 **Scope** 
 
-The overall look and feel of the website was influenced by researching similar websites (credits at end) [https://www.hellofresh.co.uk/recipes/quick-recipes] [https://www.deliciousmagazine.co.uk/collections/healthy-family-meals/]:
+The overall look and feel of the website was influenced by researching similar websites (credits at end):
 -	These are simple/clean in design.
 -	Recipes are displayed in a grid of "cards" consisting of an image and recipe title, clicking on a recipe card takes you to the recipe details page.
 -	There is a facility to search recipes. 
@@ -74,7 +76,7 @@ In line with the features identified in the scope section, the website will be s
 
 **Skeleton** 
 
-[Wireframes](https://github.com/upeshp/.........)
+[Wireframes](https://github.com/upeshp/MS3_EasyDinner/tree/master/assets/docs/wireframe)
 
 
 **Surface** 
@@ -146,7 +148,7 @@ Other:
 
 ## Testing
 
-See ........
+Testing documentation can be found [here](https://github.com/upeshp/MS3_EasyDinner/blob/master/TESTING.md)
 
 ## Deployment
 
@@ -255,11 +257,26 @@ To clone the code from GitHub:
 
 _Tutorials_
 
-Used the Code Institute Task Manger Mini-Project by [Tim Nelson](https://github.com/TravelTimN) as the main basis of my own project.
+I used the Code Institute Task Manger Mini-Project by [Tim Nelson](https://code-institute-room.slack.com/team/UBVE86CJC) as the main basis of my own project.
 
 _Slack Community_
 
-There were several helpful tips I found from searching on Slack when completing this project, in particular from:
+I was able to resolve many issues encountered after searching on Slack in the Code Institute community, the following in paticular have posted useful content:
 
-[Ed B](https://github.com/Edb83)
-[Igor CI](https://code-institute-room.slack.com/team/UPDFEU62U)
+ - [Ed Bradley](https://code-institute-room.slack.com/team/U0112RF2N79)
+ - [Igor Basuga](https://code-institute-room.slack.com/team/UPDFEU62U)
+ - [Daniel Hayes](https://code-institute-room.slack.com/team/UCQ2AF9JT)
+ - [Malia Havlicek](https://code-institute-room.slack.com/team/UERRFE54G)
+ - [Heather Olcot](https://code-institute-room.slack.com/team/U9CBT421G)
+ - [Antonio Augello](https://code-institute-room.slack.com/team/UCS5Q5LKH)
+
+_Images_
+
+Hero image on homepage from [Pixabay](https://pixabay.com/)
+
+_Research_
+
+I used the following websites as a reference in the design process:
+
+ - [Hello Fresh](https://www.hellofresh.co.uk/recipes/quick-recipes)
+ - [Delicious Magazine](https://www.deliciousmagazine.co.uk/collections/healthy-family-meals/)
