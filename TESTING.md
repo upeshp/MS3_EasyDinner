@@ -2,13 +2,13 @@
 
 _Code Validators_
 
-All code passed validation tests from the HTML and CSS validation websites.
+All code passed validation tests from the [HTML](https://validator.w3.org/) and [CSS](https://jigsaw.w3.org/css-validator/) validation websites.
 
-The python code passed the PEP8 compliance test.
+The python code passed the [PEP8](http://pep8online.com/) compliance test.
 
 _Speed_
 
-I used GT Metrix to analyse the speed of the website, which gave an overall grade of A.
+I used [GT Metrix](https://gtmetrix.com/) to analyse the speed of the website, which gave an overall grade of A.
 
 _User Stories_
 
@@ -138,10 +138,12 @@ The following details any issues which remain unresolved:
 	- if you are logged in you can edit someone else's recipe
 	- you can delete a recipe even if not logged in/not your own recipe
 	- as login functionality is not actually required for this project, and due to timing constraints, I have left this as a bug to be resolved in the future
+ 
  - Uploading image files:
 	- adding a recipe involves inputting a URL, there is no option to upload a file
 	- from searching on google/slack, I found adding this functionality is not straightforward
 	- due to timing constraints, this has been left as a feature to be added in the future
+
  - Modal for confirming recipe deletion:
 	- for the recipe delete button, it would be preferred to have a modal popup and ask the user to confirm their intention to delete for better defensive programming
 	- due to timing constraints, I used a Materialize CSS tooltip instead to display a warning message instead, when hovering over the delete button
