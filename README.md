@@ -63,7 +63,7 @@ The overall look and feel of the website was influenced by researching similar w
 -	There is a facility to login/register to the site, which then takes you to your profile page.
 
 With this in mind, my website will include:
-- 	A homepage with some details about the website, some featured recipes, and links to sign in or register (inlcluded to give an overview of the site, and make it intuitive for the user).
+- 	A homepage with some details about the website, some featured recipes, and links to sign in or register (included to give an overview of the site, and make it intuitive for the user).
 -	A searchable recipes page, which will display the recipes in a "card" or grid format.
 -	Clicking on the recipe "card" will bring up that particular recipe's details page, including the ingredients/method.
 -	A login/sign up page.
@@ -229,9 +229,9 @@ _Deployment to Heroku_
 
 1.  Setup files which Heroku needs in your terminal:
 
-    *requirements.txt*: tells Heroku which applications and dependencies are required to run our app
+    *requirements.txt*: tells Heroku which applications and dependencies are required to run our app.
     
-    *Procfile*: what Heroku looks for to know which file runs the app (use capital P for Procfile, and delete blank line at bottom of Procfile as may cause problems when running on Heroku)
+    *Procfile*: what Heroku looks for to know which file runs the app (use capital P for Procfile, and delete blank line at bottom of Procfile as may cause problems when running on Heroku).
     
     ![setup files](static/image/readme/deployment1.png)
 
@@ -251,7 +251,7 @@ _Deployment to Heroku_
     
     ![create app](static/image/readme/deployment2d.png)
 
-3.	Setup automatic deployment from your GitHib repository:
+3.	Setup automatic deployment from your GitHub repository:
 
     ![auto deploy](static/image/readme/deployment3a.png)
     
