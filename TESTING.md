@@ -149,7 +149,7 @@ The following details any issues I came across which are now resolved, for refer
     - Searched on Slack, saw solution from [Heather Olcot](https://code-institute-room.slack.com/team/U9CBT421G). 
  
  - Improving loading time by adding lazy loading to images: 
-    - Searced on Slack, read about this in a post from [Antonio Augello](https://code-institute-room.slack.com/team/UCS5Q5LKH).
+    - Searched on Slack, read about this in a post from [Antonio Augello](https://code-institute-room.slack.com/team/UCS5Q5LKH).
     
 The following details any issues which remain unresolved:
 
