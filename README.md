@@ -195,7 +195,7 @@ _MongoDB_
 
 The following collection was used for the recipes:
 
-![mongodb](static/image/readme/mongodb.png)
+![mongodb](static/image/readme/mongodb.PNG)
 
 <span id="GitHub"></span>
 
