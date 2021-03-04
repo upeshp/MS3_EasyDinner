@@ -26,24 +26,27 @@ I used [GT Metrix](https://gtmetrix.com/) to analyse the speed of the website, w
 
 _User Stories_
 
-Intuitive:
+I want the website to be intuitive, so I can get an impression of what it does from first glance:
  - The title of the site gives an idea of its purpose.
  - The homepage displays a suitable hero image, and overlaying headline explaining the site's purpose.
  - There are further details about the site included below the hero image/on the footer.
 
-Presentation:
+I want the website to be visually appealing and well presented:
  - Used Materialize CSS to present in a clean grid format.
  - Simple colour scheme used with plenty of white spaces to keep things clean and not overwhelm user.
 
-Searchable:
+I want the recipe listing feature to be searchable, so I can search for specific recipes I may be interested in:
  - Clear search function at top of recipes page, enabling searching by recipe title/ingredients.
 
-Easy login/signup:
+I want an easy way to login or signup to the website:
  - Two simple pages for these functions, where only 2 inputs are required, and clear instructions displayed regarding the requirements for these inputs.
 
-Add/edit recipe:
- - Buttons for these functions have been included for these functions on the profile page.
+I want it to be easy to add/edit a recipe:
+ - Buttons for these functions have been included on the profile page.
+ - Edit/Delete recipe buttons placed below individual recipe cards to make it easy to select recipe for editing/deleting.
  - Add Recipe also appears on the navbar (once user is logged in).
+ - Edit Recipe form has existing recipe details pre-filled in form to make it easier for user to edit.
+ - Form input requirements are kept simple, and clear instructions provided regarding input requirements displayed on form.
 
 <span id="Feat"></span>
 
@@ -67,7 +70,7 @@ INDEX
 RECIPES
 
  - Search:
-	- Entering search terms in input area brings back appropriate reuslts (i.e. recipes where recipe/ingredients matches the search term)
+	- Entering search terms in input area brings back appropriate results (i.e. recipes where recipe/ingredients matches the search term)
 	- If invalid search term entered "No results found!" message displayed
 	- Clicking the "magnifying glass" icon activates the search and displays recipe cards matching search criteria
 	- Clicking the "x" icon resets the search and displays all recipe cards again
@@ -81,7 +84,6 @@ LOGIN
  - Entering incorrect username and/or password displays "Incorrect username and/or password" message 
  - Entering username/password matching required format highlights input line as green
  - Entering username/password not matching required format highlights input line as red and displays "Please match format requested" message
- - link
  - "Register account" link at bottom takes you to register page
  
 REGISTER
@@ -113,7 +115,7 @@ EDIT RECIPE
 ADD RECIPE
  - Any form inputs not matching required format highlights input line as red
  - Attempting to click ADD RECIPE button with missing inputs displays "Please fill in this field" message
- - Clicking ADD RECIPE button when form filled correctly adds recipe to database/takes you to recipes page/displays "Recipe added!" messsage
+ - Clicking ADD RECIPE button when form filled correctly adds recipe to database/takes you to recipes page/displays "Recipe added!" message
  - The "serves/time/vegetarian" inputs are all displayed on the recipe details page within materialize chip elements
  	- The vegetarian chip element only appears when the vegetarian checkbox has been checked on the add/edit recipe form
 
@@ -131,7 +133,7 @@ _Bugs_
 
 The following details any issues I came across which are now resolved, for reference:
 
- - Displaying the recipe ingredients/method on seperate lines: to get each ingredient/step to display on a seperate line, I used splitlines in my jinja code, and prompted the user to enter each ingredient/step on the input form:
+ - Displaying the recipe ingredients/method on separate lines: to get each ingredient/step to display on a separate line, I used splitlines in my jinja code, and prompted the user to enter each ingredient/step on the input form:
     - Searched on Slack and found this online [Javatpoint](https://www.javatpoint.com/how-to-split-a-string-in-java-with-delimiter#:~:text=In%20Java,%20splitting%20string%20is%20an%20important%20and,the%20split%20()%20method%20of%20the%20String%20class.).
  
  - Displaying individual recipe details: to call up individual recipe details on the recipe_details page, used find_one in the relevant section on app.py:
