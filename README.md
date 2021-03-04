@@ -1,8 +1,8 @@
-## Milestone 3 – Easy Dinners Website
+## Milestone 3 – EasyDinner Website
 
 I am designing a recipe sharing database website. The website will contain recipes for quick, easy family dinners.
 
-[Link to deployed site](https://ms3-easydinner.herokuapp.com/)
+[EasyDinner](https://ms3-easydinner.herokuapp.com/)
 
 ![picture](static/image/readme/responsive.PNG)
 
@@ -18,8 +18,9 @@ I am designing a recipe sharing database website. The website will contain recip
 - <a href="#Technologies">Technologies Used</a>
 - <a href="#Testing">Testing</a>
 - <a href="#Deployment">Deployment</a>
-    - <a href="#Heroku">Heroku</a>
+    - <a href="#MongoDB">MongoDB</a>
     - <a href="#GitHub">GitHub</a>
+    - <a href="#Heroku">Heroku</a>
 - <a href="#Credits">Credits</a>
 
 <span id="UX"></span>
@@ -62,11 +63,11 @@ The overall look and feel of the website was influenced by researching similar w
 -	There is a facility to login/register to the site, which then takes you to your profile page.
 
 With this in mind, my website will include:
-- 	A homepage with some details about the website, some featured recipes, and links to sign in or register (inlcuded to give an overview of the site, and make it intuitive for the user).
+- 	A homepage with some details about the website, some featured recipes, and links to sign in or register (inlcluded to give an overview of the site, and make it intuitive for the user).
 -	A searchable recipes page, which will display the recipes in a "card" or grid format.
--	Clicking on the recipe "card" will bring up that particular recipe details page, including the ingredients/method.
+-	Clicking on the recipe "card" will bring up that particular recipe's details page, including the ingredients/method.
 -	A login/sign up page.
--	Once logged in the user will be directed to their user profile page, which will give the user options to add/edit their own recipe.
+-	Once logged in, the user will be directed to their user profile page, which will give the user options to add/edit their own recipes.
 
 **Structure** 
 
@@ -76,12 +77,10 @@ In line with the features identified in the scope section, the website will be s
 
 	-	Navbar at top, showing website title/logo, and links to other pages (fixed/featured on all pages for familiarity/ease of use).
 	-	Hero image with text explaining the purpose of the site.
- 	- 	Some featured recipes.
 	- 	Links to log in or sign in.
 	-	Footer showing social media links (fixed/featured on all pages for familiarity/ease of use).
 	- 	This page has been included/designed in this way to give the user an effective snapshot of the site, you can see all the main features of the site from looking at this page:
 		-	Introductory text and hero image "explain" the sites purpose.
-		-	The featured recipes give a preview of the type of recipes they can access.
 		-	The sign in/log in links show that this is a interactive/sharing site, the accompanying text will encourage the user to do so.
   
 2.	Recipes:
@@ -107,8 +106,8 @@ In line with the features identified in the scope section, the website will be s
 
 -	The colour scheme will be influenced from the research detailed in the scope section above.
 -	The websites tend to use simple colour schemes, with green/teal often being used.
--	Green is associated with being peaceful and healthy, which is perfect for this site, so this colour will be used in my site for any main features [Source: CrazyEgg](https://www.crazyegg.com/blog/website-color-palettes/).
--	A clear, easy to read, friendly style of font was wanted, I decided on a combination of Open Sans/Roboto (Google Fonts) as I thought this matches these particular requirements.
+-	Green is associated with being peaceful and healthy, which is perfect for this site, so this colour will be used in my site for any main features. [Source: CrazyEgg](https://www.crazyegg.com/blog/website-color-palettes/)
+-	A clear, easy to read, friendly style of font was wanted, I decided on a combination of Open Sans/Roboto (Google Fonts) as I thought these fonts meet these particular requirements.
 
 <span id="Features"></span>
 
@@ -145,11 +144,11 @@ _Left to Implement_
 
 The following features were considered during the build of the site, however due to time constraints, these were not included in this version, but could be added at a later date:
 
-- 	Ability to rate/mark a recipe as a favourite
--	Introducing recipe categories e.g. vegetarian/quick/easy etc which can then be filtered
--	Pagination to ensure not too many recipes displayed on 1 page
--   Displaying latest or featured recipes on homepage
--   See unresolved bugs section in Testing for further features left to implement
+- 	Ability to rate/mark a recipe as a favourite.
+-	Introducing recipe categories e.g. vegetarian/quick/easy etc, which can then be filtered.
+-	Pagination to ensure not too many recipes displayed on 1 page.
+-   Displaying latest or featured recipes on homepage.
+-   See unresolved bugs section in [testing](https://github.com/upeshp/MS3_EasyDinner/blob/master/TESTING.md) for further features left to implement.
 
 <span id="Technologies"></span>
 
@@ -188,6 +187,42 @@ Testing documentation can be found [here](https://github.com/upeshp/MS3_EasyDinn
 
 ## Deployment
 
+The source code for this site is in GitHub. Heroku was used to deploy the site. MongoDB was used for the database.
+
+<span id="MongoDB"></span>
+
+_MongoDB_
+
+The following collection was used for the recipes:
+
+![mongodb](static/image/readme/mongodb.png)
+
+<span id="GitHub"></span>
+
+_GitHub_
+
+To clone the code from GitHub:
+
+1.	On GitHub, navigate to the main page of the repository.
+2.	Above the list of files, click Code.
+
+    ![view](static/image/readme/deployment_github.png)
+
+3.	To clone the repository using HTTPS, click HTTPS under "Clone".
+4.	Open Git Bash.
+5.	Change the current working directory to the location where you want the cloned directory.
+6.	Type git clone, and then paste the URL you copied earlier:
+    ```$ git clone https://github.com/YOUR-USERNAME/MS3_EasyDinner.git```
+7.	Press Enter to create your local clone.
+8.  Create your own env.py file to store variables, and ensure this is listed in your .gitignore file to keep these from being displayed publicly:
+
+     - Import os 
+     - os.environ.setdefault("IP", "enter value") 
+     - os.environ.setdefault("PORT", "enter value") 
+     - os.environ.setdefault("SECRET_KEY", "enter value") 
+     - os.environ.setdefault("MONGO_URI", "enter value") 
+     - os.environ.setdefault("MONGO_DBNAME", "enter value")
+ 
 <span id="Heroku"></span>
 
 _Deployment to Heroku_
@@ -267,31 +302,7 @@ _Deployment to Heroku_
     
     ![view](static/image/readme/deployment7.png)
 
-<span id="GitHub"></span>
 
-_GitHub_
-
-To clone the code from GitHub:
-
-1.	On GitHub, navigate to the main page of the repository.
-2.	Above the list of files, click Code.
-
-    ![view](static/image/readme/deployment_github.png)
-
-3.	To clone the repository using HTTPS, click HTTPS under "Clone".
-4.	Open Git Bash.
-5.	Change the current working directory to the location where you want the cloned directory.
-6.	Type git clone, and then paste the URL you copied earlier:
-    ```$ git clone https://github.com/YOUR-USERNAME/MS3_EasyDinner.git```
-7.	Press Enter to create your local clone.
-8.  Create your own env.py file to store variables:
-
-     - Import os 
-     - os.environ.setdefault("IP", "enter value") 
-     - os.environ.setdefault("PORT", "enter value") 
-     - os.environ.setdefault("SECRET_KEY", "enter value") 
-     - os.environ.setdefault("MONGO_URI", "enter value") 
-     - os.environ.setdefault("MONGO_DBNAME", "enter value")
 
 <span id="Credits"></span>
 
