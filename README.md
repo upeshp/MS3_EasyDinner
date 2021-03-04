@@ -136,7 +136,7 @@ In addition the following features are used:
 -   User profile page displaying users recipes only
 -   Passwords are hashed so not shown on the database
 -   Full CRUD functionality included
--   Custon 404/500 error pages
+-   Custom 404/500 error pages
 
 <span id="Left"></span>
 
@@ -148,7 +148,7 @@ The following features were considered during the build of the site, however due
 -	Introducing recipe categories e.g. vegetarian/quick/easy etc, which can then be filtered.
 -	Pagination to ensure not too many recipes displayed on 1 page.
 -   Displaying latest or featured recipes on homepage.
--   See unresolved bugs section in [testing](https://github.com/upeshp/MS3_EasyDinner/blob/master/TESTING.md) for further features left to implement.
+-   See unresolved bugs section in [Testing](https://github.com/upeshp/MS3_EasyDinner/blob/master/TESTING.md) for further features left to implement.
 
 <span id="Technologies"></span>
 
@@ -181,7 +181,7 @@ Other:
 
 ## Testing
 
-Testing documentation can be found [here](https://github.com/upeshp/MS3_EasyDinner/blob/master/TESTING.md)
+Testing documentation can be found [here](https://github.com/upeshp/MS3_EasyDinner/blob/master/TESTING.md).
 
 <span id="Deployment"></span>
 
@@ -204,7 +204,7 @@ _GitHub_
 To clone the code from GitHub:
 
 1.	On GitHub, navigate to the main page of the repository.
-2.	Above the list of files, click Code.
+2.	Above the list of files, click Code:
 
     ![view](static/image/readme/deployment_github.png)
 
@@ -229,9 +229,9 @@ _Deployment to Heroku_
 
 1.  Setup files which Heroku needs in your terminal:
 
-    requirements.txt: tells Heroku which applications and dependencies are required to run our app
+    *requirements.txt*: tells Heroku which applications and dependencies are required to run our app
     
-    Procfile: what Heroku looks for to know which file runs the app (use capital P for Procfile, and delete blank line at bottom of Procfile as may cause problems when running on Heroku)
+    *Procfile*: what Heroku looks for to know which file runs the app (use capital P for Procfile, and delete blank line at bottom of Procfile as may cause problems when running on Heroku)
     
     ![setup files](static/image/readme/deployment1.png)
 
@@ -239,35 +239,35 @@ _Deployment to Heroku_
 
     ![new app](static/image/readme/deployment2a.png)
     
-    Create app name (must be unique, and generally use a 'dash' or 'minus' instead of spaces, and all lowercase letters)
+    Create app name (must be unique, and generally use a 'dash' or 'minus' instead of spaces, and all lowercase letters):
     
     ![app name](static/image/readme/deployment2b.png)
     
-    Choose region closest to you
+    Choose region closest to you:
     
     ![region](static/image/readme/deployment2c.png)
     
-    Then click ‘Create app’
+    Then click ‘Create app’:
     
-    ![create app](static/image/readme/deployment2c.png)
+    ![create app](static/image/readme/deployment2d.png)
 
 3.	Setup automatic deployment from your GitHib repository:
 
     ![auto deploy](static/image/readme/deployment3a.png)
     
-    Make sure your GitHub profile is displayed
+    Make sure your GitHub profile is displayed:
     
     ![profile](static/image/readme/deployment3b.png)
     
-    Then add your repository name
+    Then add your repository name:
     
     ![repo name](static/image/readme/deployment3c.png)
     
-    Click ‘Search’
+    Click ‘Search’:
     
     ![search](static/image/readme/deployment3d.png)
     
-    Once it finds your repo, click to connect to this app
+    Once it finds your repo, click 'Connect' to connect to this app:
     
     ![connect](static/image/readme/deployment3e.png)
 
@@ -280,11 +280,11 @@ _Deployment to Heroku_
     ![config](static/image/readme/deployment4b.png)
     
     Then enter the variables (from the env.py) file to securely tell Heroku which variables are required:
-    IP
-    PORT
-    MONGO_DBNAME
-    MONGO_URI
-    SECRET_KEY
+     - IP
+     - PORT
+     - MONGO_DBNAME
+     - MONGO_URI
+     - SECRET_KEY
 
 5.	Push two new files (requirements.txt and Profile) to repository, in terminal, add/commit/push these:
     
@@ -294,14 +294,13 @@ _Deployment to Heroku_
     
     ![enable](static/image/readme/deployment6a.png)
 
-    Then ‘Deploy Branch’
+    Then ‘Deploy Branch’:
     
     ![deploy](static/image/readme/deployment6b.png)
 
-7.	That should take a minute to build, once it's done, you'll see ‘Your app was successfully deployed.’ Click ‘View’ to launch your new app.
+7.	That should take a minute to build, once it's done, you'll see ‘Your app was successfully deployed.’ Click ‘View’ to launch your new app:
     
     ![view](static/image/readme/deployment7.png)
-
 
 
 <span id="Credits"></span>
@@ -314,7 +313,7 @@ I used the Code Institute Task Manger Mini-Project by [Tim Nelson](https://code-
 
 _Slack Community_
 
-I was able to resolve many issues encountered after searching on Slack in the Code Institute community, the following in paticular have posted useful content:
+I was able to resolve many issues encountered after searching on Slack in the Code Institute community, the following in particular have posted content which I found useful:
 
  - [Ed Bradley](https://code-institute-room.slack.com/team/U0112RF2N79)
  - [Igor Basuga](https://code-institute-room.slack.com/team/UPDFEU62U)
@@ -333,7 +332,7 @@ _Images_
 
 Hero image on homepage from [Pixabay](https://pixabay.com/).
 
-Recipe images from [Hello Fresh](https://www.hellofresh.co.uk/recipes/quick-recipes) 
+Recipe images from [Hello Fresh](https://www.hellofresh.co.uk/recipes/quick-recipes).
 
 (Website created for educational purposes only, not intended to be used for commercial purposes)
 
