@@ -322,6 +322,8 @@ I was able to resolve many issues encountered after searching on Slack in the Co
  - [Heather Olcot](https://code-institute-room.slack.com/team/U9CBT421G)
  - [Antonio Augello](https://code-institute-room.slack.com/team/UCS5Q5LKH)
 
+I would also like to thank the Slack peer-code-review community for reviewing my project.
+
 _Student Projects_
 
  - [Self Isolution](https://github.com/Edb83/self-isolution)
