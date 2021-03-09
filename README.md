@@ -100,7 +100,7 @@ In line with the features identified in the scope section, the website will be s
 
 **Skeleton** 
 
-[Wireframes](https://github.com/upeshp/MS3_EasyDinner/tree/master/assets/docs/wireframe)
+[Wireframes - includes sitemap and database schema](https://github.com/upeshp/MS3_EasyDinner/tree/master/assets/docs/wireframe)
 
 **Surface** 
 
