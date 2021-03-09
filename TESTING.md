@@ -39,7 +39,7 @@ I want the recipe listing feature to be searchable, so I can search for specific
  - Clear search function at top of recipes page, enabling searching by recipe title/ingredients.
 
 I want an easy way to login or signup to the website:
- - Two simple pages for these functions, where only 2 inputs are required, and clear instructions displayed regarding the requirements for these inputs.
+ - Two simple pages for these functions, where only two inputs are required, and clear instructions displayed regarding the requirements for these inputs.
 
 I want it to be easy to add/edit a recipe:
  - Buttons for these functions have been included on the profile page.
